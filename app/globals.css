@@ -1,43 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @plugin "daisyui";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-radius: var(--radius);
+}
 
 :root,
 [data-theme="entrosync"] {
   color-scheme: dark;
-  --color-base-100: #08090a;
-  --color-base-200: #222326;
-  --color-base-300: #34363a;
-  --color-base-content: #f4f5f8;
-  --color-primary: #f4f5f8;
-  --color-primary-content: #08090a;
-  --color-secondary: #222326;
-  --color-secondary-content: #f4f5f8;
-  --color-accent: #f4f5f8;
-  --color-accent-content: #08090a;
-  --color-neutral: #222326;
-  --color-neutral-content: #f4f5f8;
-  --color-info: #222326;
-  --color-info-content: #f4f5f8;
-  --color-success: #222326;
-  --color-success-content: #f4f5f8;
-  --color-warning: #222326;
-  --color-warning-content: #f4f5f8;
-  --color-error: #222326;
-  --color-error-content: #f4f5f8;
+  --background: #09090b;
+  --foreground: #f4f4f5;
+  --card: #18181b;
+  --card-foreground: #f4f4f5;
+  --popover: #18181b;
+  --popover-foreground: #f4f4f5;
+  --primary: #f4f4f5;
+  --primary-foreground: #18181b;
+  --secondary: #27272a;
+  --secondary-foreground: #f4f4f5;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #f4f4f5;
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #d4d4d8;
+  --radius: 0.75rem;
+
+  /* DaisyUI Theme Alignment */
+  --color-base-100: #09090b;
+  --color-base-200: #18181b;
+  --color-base-300: #27272a;
+  --color-base-content: #f4f4f5;
+  --color-primary: #f4f4f5;
+  --color-primary-content: #18181b;
+  --color-secondary: #27272a;
+  --color-secondary-content: #f4f4f5;
+  --color-accent: #27272a;
+  --color-accent-content: #f4f4f5;
+  --color-neutral: #18181b;
+  --color-neutral-content: #f4f4f5;
+  --color-info: #27272a;
+  --color-info-content: #f4f4f5;
+  --color-success: #27272a;
+  --color-success-content: #f4f4f5;
+  --color-warning: #27272a;
+  --color-warning-content: #f4f4f5;
+  --color-error: #ef4444;
+  --color-error-content: #fafafa;
   --radius-selector: 2rem;
   --radius-field: 0.75rem;
-  --radius-box: 0.5rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
+  --radius-box: 0.75rem;
   --border: 1px;
-  --depth: 0;
-  --noise: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+html,
 body {
+  min-height: 100%;
+  @apply bg-background font-inter text-foreground;
+}
+
+body {
+  margin: 0;
   overflow-x: hidden;
 }
