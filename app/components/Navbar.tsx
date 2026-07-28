@@ -2,6 +2,7 @@ import Image from "next/image";
 
 const navItems = [
   ["Solutions", "#solutions"],
+  ["Playground", "#playground"],
   ["Demo", "#demo"],
   ["Proof", "#proof"],
   ["FAQ", "#faq"],

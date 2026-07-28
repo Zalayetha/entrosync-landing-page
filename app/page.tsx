@@ -1,4 +1,6 @@
 import { Navbar } from "./components/Navbar";
+import { InteractivePlayground } from "./components/InteractivePlayground";
+import { Footer } from "./components/Footer";
 
 const solutions = [
   {
@@ -185,6 +187,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Playground Section */}
+      <InteractivePlayground />
 
       {/* Solutions Grid */}
       <section id="solutions" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -399,6 +404,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
