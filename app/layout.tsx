@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Entrosync",
-  description: "Landing page for Entrosync SaaS",
+  title: "EntroSync",
+  description: "Portal klien untuk freelancer dan agensi",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="id"
       data-theme="entrosync"
       className={`${inter.variable} h-full antialiased`}
     >
