@@ -16,7 +16,7 @@ export const LanguageSwitcher = ({ locale, labels }: LanguageSwitcherProps) => {
   return (
     <div
       aria-label={labels.aria}
-      className="join border border-base-300 bg-base-200 p-0.5"
+      className="join overflow-hidden rounded-full border border-base-300 bg-base-200 p-0.5"
       role="group"
     >
       <button

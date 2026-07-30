@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { LandingContent, Locale } from "../lib/content";
+import { TYPEFORM_URL } from "../lib/links";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 type NavbarProps = {
@@ -73,7 +74,12 @@ export const Navbar = ({ content, locale }: NavbarProps) => {
           <a className="btn btn-ghost hidden rounded-full sm:inline-flex" href="#demo">
             {content.viewDemo}
           </a>
-          <a className="btn btn-primary rounded-full" href="#cta">
+          <a
+            className="btn btn-primary rounded-full"
+            href={TYPEFORM_URL}
+            rel="noreferrer"
+            target="_blank"
+          >
             {content.cta}
           </a>
         </div>

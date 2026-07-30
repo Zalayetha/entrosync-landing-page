@@ -72,7 +72,10 @@ export const Footer = ({ content, locale }: FooterProps) => {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between border-t border-base-300/60 pt-6 text-xs text-base-content/50 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} EntroSync. {content.copyright}</p>
+          <div className="text-center sm:text-left">
+            <p>&copy; {new Date().getFullYear()} EntroSync. {content.copyright}</p>
+            <p className="mt-1">made with ☕️ by zaghy</p>
+          </div>
           <div className="mt-3 flex gap-4 sm:mt-0">
             {content.legalLinks.map((link) => (
               <a href={link.href} className="hover:text-base-content transition" key={link.label}>

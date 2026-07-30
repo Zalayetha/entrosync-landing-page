@@ -2,6 +2,7 @@ import { Navbar } from "./Navbar";
 import { InteractivePlayground } from "./InteractivePlayground";
 import { Footer } from "./Footer";
 import type { LandingContent, Locale, StatusType } from "../lib/content";
+import { TYPEFORM_URL } from "../lib/links";
 
 type LandingPageProps = {
   content: LandingContent;
@@ -174,6 +175,7 @@ export const LandingPage = ({ content, locale }: LandingPageProps) => {
         </div>
       </section>
 
+      {/*
       <section id="proof" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.75fr_1fr]">
           <div>
@@ -208,6 +210,7 @@ export const LandingPage = ({ content, locale }: LandingPageProps) => {
           </div>
         </div>
       </section>
+      */}
 
       <section id="why-us" className="border-y border-base-300 bg-base-100 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -253,24 +256,19 @@ export const LandingPage = ({ content, locale }: LandingPageProps) => {
                 {content.cta.description}
               </p>
             </div>
-            <form className="flex flex-col gap-3" action="#">
-              <label className="sr-only" htmlFor="email">
-                {content.cta.emailLabel}
-              </label>
-              <input
-                className="input input-bordered w-full bg-base-100 text-base-content"
-                id="email"
-                name="email"
-                placeholder={content.cta.placeholder}
-                type="email"
-              />
-              <button className="btn btn-primary rounded-full" type="submit">
+            <div className="flex flex-col gap-3">
+              <a
+                className="btn btn-primary rounded-full"
+                href={TYPEFORM_URL}
+                rel="noreferrer"
+                target="_blank"
+              >
                 {content.cta.button}
-              </button>
+              </a>
               <p className="text-xs text-neutral-content/60">
                 {content.cta.note}
               </p>
-            </form>
+            </div>
           </div>
         </div>
       </section>

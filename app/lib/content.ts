@@ -135,8 +135,6 @@ export type LandingContent = {
     eyebrow: string;
     title: string;
     description: string;
-    emailLabel: string;
-    placeholder: string;
     button: string;
     note: string;
   };
@@ -172,7 +170,6 @@ export const content: Record<Locale, LandingContent> = {
         { label: "Solusi", href: "#solutions" },
         { label: "Playground", href: "#playground" },
         { label: "Demo", href: "#demo" },
-        { label: "Bukti", href: "#proof" },
         { label: "FAQ", href: "#faq" },
       ],
       ariaMenu: "Buka menu navigasi",
@@ -467,8 +464,6 @@ export const content: Record<Locale, LandingContent> = {
       title: "Upgrade pengalaman portal klien Anda hari ini.",
       description:
         "Masuk waitlist EntroSync untuk merapikan brief klien, tracking milestone, dan invoicing dalam satu workspace.",
-      emailLabel: "Alamat email",
-      placeholder: "freelancer@agency.com",
       button: "Coba EntroSync",
       note: "Tanpa spam. Jadi yang pertama mencoba EntroSync.",
     },
@@ -517,8 +512,8 @@ export const content: Record<Locale, LandingContent> = {
       navigationTitle: "Navigasi",
       navigationLinks: [
         { label: "Kenapa EntroSync?", href: "#why-us" },
-        { label: "Bukti Freelancer & Review", href: "#proof" },
         { label: "Pertanyaan Umum", href: "#faq" },
+        { label: "Kontak & Dukungan", href: "/contact" },
         { label: "Waitlist Early Access", href: "#cta" },
       ],
       securityTitle: "Keamanan Portal Klien",
@@ -527,9 +522,8 @@ export const content: Record<Locale, LandingContent> = {
         "Akses klien berbasis token (`/client/:token`) membantu klien memantau progress proyek tanpa bisa mengubah data workspace.",
       copyright: "Hak cipta dilindungi.",
       legalLinks: [
-        { label: "Privacy Policy", href: "#" },
-        { label: "Terms of Service", href: "#" },
-        { label: "Security Rules", href: "#" },
+        { label: "Kebijakan Privasi", href: "/privacy" },
+        { label: "Ketentuan Layanan", href: "/terms" },
       ],
     },
   },
@@ -544,7 +538,6 @@ export const content: Record<Locale, LandingContent> = {
         { label: "Solutions", href: "#solutions" },
         { label: "Playground", href: "#playground" },
         { label: "Demo", href: "#demo" },
-        { label: "Proof", href: "#proof" },
         { label: "FAQ", href: "#faq" },
       ],
       ariaMenu: "Open navigation menu",
@@ -839,8 +832,6 @@ export const content: Record<Locale, LandingContent> = {
       title: "Upgrade your client portal experience today.",
       description:
         "Join the EntroSync waitlist to streamline client briefs, milestone tracking, and invoicing in one workspace.",
-      emailLabel: "Email address",
-      placeholder: "freelancer@agency.com",
       button: "Get EntroSync",
       note: "Zero spam. Be first to access EntroSync.",
     },
@@ -889,8 +880,8 @@ export const content: Record<Locale, LandingContent> = {
       navigationTitle: "Navigation",
       navigationLinks: [
         { label: "Why EntroSync?", href: "#why-us" },
-        { label: "Freelancer Proof & Reviews", href: "#proof" },
         { label: "Frequently Asked Questions", href: "#faq" },
+        { label: "Contact & Support", href: "/en/contact" },
         { label: "Early Access Waitlist", href: "#cta" },
       ],
       securityTitle: "Client Portal Security",
@@ -899,9 +890,8 @@ export const content: Record<Locale, LandingContent> = {
         "Token-scoped client access (`/client/:token`) ensures clients can monitor project progress safely without altering workspace data.",
       copyright: "All rights reserved.",
       legalLinks: [
-        { label: "Privacy Policy", href: "#" },
-        { label: "Terms of Service", href: "#" },
-        { label: "Security Rules", href: "#" },
+        { label: "Privacy Policy", href: "/en/privacy" },
+        { label: "Terms of Service", href: "/en/terms" },
       ],
     },
   },
