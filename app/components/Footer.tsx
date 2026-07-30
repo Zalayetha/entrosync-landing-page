@@ -77,7 +77,7 @@ export const Footer = ({ content, locale }: FooterProps) => {
             <p className="mt-1">
               made with ☕️ by{" "}
               <a
-                className="transition hover:text-base-content"
+                className="font-semibold text-base-content transition hover:underline"
                 href="https://zaghy.zalsoft.com"
                 rel="noreferrer"
                 target="_blank"
