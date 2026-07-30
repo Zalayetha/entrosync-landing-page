@@ -74,7 +74,17 @@ export const Footer = ({ content, locale }: FooterProps) => {
         <div className="mt-12 flex flex-col items-center justify-between border-t border-base-300/60 pt-6 text-xs text-base-content/50 sm:flex-row">
           <div className="text-center sm:text-left">
             <p>&copy; {new Date().getFullYear()} EntroSync. {content.copyright}</p>
-            <p className="mt-1">made with ☕️ by zaghy</p>
+            <p className="mt-1">
+              made with ☕️ by{" "}
+              <a
+                className="transition hover:text-base-content"
+                href="https://zaghy.zalsoft.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                zaghy
+              </a>
+            </p>
           </div>
           <div className="mt-3 flex gap-4 sm:mt-0">
             {content.legalLinks.map((link) => (

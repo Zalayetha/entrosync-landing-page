@@ -25,7 +25,7 @@ export const LandingPage = ({ content, locale }: LandingPageProps) => {
       <section className="relative overflow-hidden border-b border-base-300 bg-base-100">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.95fr] lg:px-8 lg:py-24">
           <div className="flex flex-col justify-center">
-            <div className="badge badge-outline mb-6 gap-2 border-primary/40 px-4 py-3 text-primary">
+            <div className="mb-6 inline-flex max-w-full items-center rounded-full border border-primary/40 px-4 py-2 text-sm font-medium leading-snug text-primary sm:text-base">
               {content.hero.badge}
             </div>
             <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-normal sm:text-5xl lg:text-6xl">

@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "Portal klien untuk freelancer dan agensi",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },
 };
 
